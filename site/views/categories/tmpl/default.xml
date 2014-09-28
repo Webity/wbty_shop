@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Categories" option="Display a set of categories.">
+		<message>
+			<![CDATA[COM_WBTY_SHOP_CATEGORIES_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+				
+			<field type="sql"
+				name="categories"
+				query="SELECT id, title FROM #__categories WHERE extension='com_wbty_shop'"
+				key_field="id"
+				value_field="title"
+				multiple="true"
+				label="COM_WBTY_SHOP_CATEGORIES_VIEW_CATEGORIES_LABEL"
+				description="COM_WBTY_SHOP_CATEGORIES_VIEW_CATEGORIES_DESC" />
+				
+			<field type="text" 
+				name="columns"
+				default="3" 
+				label="COM_WBTY_SHOP_CATEGORIES_VIEW_COLUMNS_LABEL" 
+				description="COM_WBTY_SHOP_CATEGORIES_VIEW_COLUMNS_DESC" 
+				filter="integer" />
+				
+			<field type="text" 
+				name="menu_item"
+				label="COM_WBTY_SHOP_CATEGORIES_VIEW_MENU_ITEM" 
+				description="COM_WBTY_SHOP_CATEGORIES_VIEW_MENU_ITEM_DESC"
+				fileter="integer" />
+				
+		</fieldset>
+	</fields>
+</metadata>

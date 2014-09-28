@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Images with Thumbnails" option="Display Images from one or more categories.">
+		<message>
+			<![CDATA[COM_WBTY_SHOP_THUMBNAIL_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+			<field type="text" 
+				name="limit"
+				default="0" 
+				label="COM_WBTY_SHOP_IMAGES_VIEW_LIMIT_LABEL" 
+				description="COM_WBTY_SHOP_IMAGES_VIEW_LIMIT_DESC" 
+				filter="integer" />
+				
+			<field type="text" 
+				name="columns"
+				default="3" 
+				label="COM_WBTY_SHOP_IMAGES_VIEW_COLUMNS_LABEL" 
+				description="COM_WBTY_SHOP_IMAGES_VIEW_COLUMNS_DESC" 
+				filter="integer" />
+				
+			<field
+				name="show_number"
+				type="list"
+				label="JGLOBAL_SHOW_TITLE_LABEL"
+				description="JGLOBAL_SHOW_TITLE_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+				
+			<field type="sql"
+				name="id"
+				query="SELECT id, title FROM #__categories WHERE extension='com_wbty_shop'"
+				key_field="id"
+				value_field="title"
+				label="COM_WBTY_SHOP_IMAGES_VIEW_GALLERIES_LABEL"
+				description="COM_WBTY_SHOP_IMAGES_VIEW_GALLERIES_DESC" />
+		</fieldset>
+	</fields>
+</metadata>

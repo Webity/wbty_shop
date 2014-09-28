@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Column Layout" option="Display Images from one or more categories.">
+		<message>
+			<![CDATA[COM_WBTY_SHOP_IMAGES_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request">
+			<field type="sql"
+				name="id"
+				query="SELECT id, title FROM #__categories WHERE extension='com_wbty_shop'"
+				key_field="id"
+				value_field="title"
+				label="Category"
+				description="Select the catergory from which to draw products from.">
+			<option value="">All categories</option>
+			</field>
+		</fieldset>
+	</fields>
+	
+	<fields name="params">
+		<fieldset name="basic">
+			<field type="text" 
+				name="limit"
+				default="0" 
+				label="Limit"
+				description="Limit the number of products displayed, or leave at 0 to display all products." 
+				filter="integer" />
+				
+			<field type="text" 
+				name="columns"
+				default="3" 
+				label="Columns" 
+				description="The number of columns to split the products into." 
+				filter="integer" />
+				
+			<field
+				name="show_number"
+				type="list"
+				label="JGLOBAL_SHOW_TITLE_LABEL"
+				description="JGLOBAL_SHOW_TITLE_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+				
+			<field
+				name="display_title"
+				type="list"
+				label="Display Title"
+				description=""
+				default="1">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="title_level"
+				type="list"
+				label="Title Level"
+				description=""
+				default="h2">
+				<option value="h1">H1</option>
+				<option value="h2">H2</option>
+				<option value="h3">H3</option>
+				<option value="h4">H4</option>
+				<option value="h5">H5</option>
+				<option value="h6">H6</option>
+			</field>
+				
+			<field
+				name="display_image"
+				type="list"
+				label="Display Image"
+				description=""
+				default="1">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="image_modal"
+				type="list"
+				label="Image Modal"
+				description=""
+				default="0">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+				
+			<field
+				name="display_caption"
+				type="list"
+				label="Display Caption"
+				description=""
+				default="0">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+				
+			<field
+				name="display_custom_fields"
+				type="list"
+				label="Display Custom Fields"
+				description="">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+				
+			<field
+				name="display_description"
+				type="list"
+				label="Display Description"
+				description="">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

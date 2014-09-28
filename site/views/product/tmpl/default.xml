@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Single Item Layout" option="Display Images from one or more categories.">
+		<message>
+			<![CDATA[COM_WBTY_SHOP_PRODUCT_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request">
+			<field type="text"
+				name="id"
+				label="Item ID"
+				description="" />
+		</fieldset>
+	</fields>
+	
+	<fields name="params">
+		<fieldset name="basic">
+			<field
+				name="display_title"
+				type="list"
+				label="Display Title"
+				description=""
+				default="1">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field
+				name="title_level"
+				type="list"
+				label="Title Level"
+				description=""
+				default="h2">
+				<option value="h1">H1</option>
+				<option value="h2">H2</option>
+				<option value="h3">H3</option>
+				<option value="h4">H4</option>
+				<option value="h5">H5</option>
+				<option value="h6">H6</option>
+			</field>
+				
+			<field
+				name="display_image"
+				type="list"
+				label="Display Image"
+				description=""
+				default="1">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+				
+			<field
+				name="display_custom_fields"
+				type="list"
+				label="Display Custom Fields"
+				description=""
+				default="1">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+				
+			<field
+				name="display_description"
+				type="list"
+				label="Display Description"
+				description=""
+				default="1">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

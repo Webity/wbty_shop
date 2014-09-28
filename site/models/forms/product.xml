@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="product">
+		<fieldset name="product">
+
+	        <field name="id" type="hidden" default="0" class="id" /> 
+	
+		<field type="text" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_IMAGE" name="image" size="" maxlength="" default="" description="COM_WBTY_SHOP_FORM_DESC_PRODUCTS_IMAGE" filter="safehtml" class="default_col" />
+		<field type="text" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_NAME" name="name" size="" maxlength="" default="" description="COM_WBTY_SHOP_FORM_DESC_PRODUCTS_NAME" class="" filter="safehtml" required="true" />
+		<field type="editor" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_DESCRIPTION" name="description" width="" height="" cols="" rows="" buttons="" hide="" editor="" filter="safehtml" />
+		<field type="category" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_CATEGORY" name="category" extension="com_wbty_shop" show_root="safehtml" default="" description="COM_WBTY_SHOP_FORM_DESC_PRODUCTS_CATEGORY" class="" required="true" />
+		<field type="modalsql" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_PRICING_SET" name="pricing_set" query="Field linked to a table that no longer existed in component builder." key_field="id" default="" description="COM_WBTY_SHOP_FORM_DESC_PRODUCTS_PRICING_SET" />
+		<field type="text" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_SLIDE_TYPE" name="slide_type" size="" maxlength="" default="" description="COM_WBTY_SHOP_FORM_DESC_PRODUCTS_SLIDE_TYPE" class="" filter="safehtml" />
+		<field type="text" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_MENU_LINK" name="menu_link" size="" maxlength="" default="" description="COM_WBTY_SHOP_FORM_DESC_PRODUCTS_MENU_LINK" class="" filter="safehtml" />
+		<field type="text" label="COM_WBTY_SHOP_FORM_LBL_PRODUCTS_CAPTION" name="caption" size="" maxlength="" default="" description="COM_WBTY_SHOP_FORM_DESC_PRODUCTS_CAPTION" class="" filter="safehtml" />
+
+	        <field name="state" type="hidden" default="1" /> 
+
+	        <field name="checked_out" type="hidden" filter="unset" />
+	        <field name="checked_out_time" type="hidden" filter="unset" />
+			
+			<field name="modified_by" type="hidden" filter="integer" overwrite="true" />
+			<field name="modified_time" type="hidden" filter="safehtml" overwrite="true" />
+
+		</fieldset>
+	</fields>
+
+
+
+</form>

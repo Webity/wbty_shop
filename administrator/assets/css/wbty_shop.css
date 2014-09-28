@@ -1,0 +1,37 @@
+.toolbar-list span {
+	background-position: 0 0;
+	
+}
+
+#toolbar-box .pagetitle {
+	width:auto;
+}
+
+.icon-48-users {
+      background-image: url(../images/L_users.png);
+      padding-left:60px!important;
+}
+
+.icon-48-user {
+      background-image: url(../images/L_users.png);
+      padding-left:60px!important;
+}
+
+a.modal {
+	position: relative;
+	top: auto;
+	left: auto;
+	margin: 0;
+	width: auto;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	background-color:inherit;
+}
+
+#menu a {
+	width:auto;
+}
+
+.adminlist .order input {
+	width:auto;
+}
